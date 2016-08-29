@@ -31,3 +31,6 @@ function sizeUpdate() {
 
 $(document).ready(sizeUpdate); // When the page first loads
 $(window).resize(sizeUpdate); // When the browser changes size
+
+
+// look mom!!!!!!!
