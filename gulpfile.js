@@ -1,6 +1,7 @@
 // include the required packages.
 var gulp = require('gulp');
 var stylus = require('gulp-stylus');
+var nib    = require('nib');
 var pug = require('gulp-pug');
 var useref = require('gulp-useref');
 var browserSync = require('browser-sync').create();
@@ -19,7 +20,10 @@ gulp.task('browserSync', function() {
 // Options compress
 gulp.task('stylus', function () {
   return gulp.src('app/stylus/**/*.styl')
-    .pipe(stylus({ compress: true }))
+    .pipe(stylus({
+      compress: true,
+      use: nib()
+    }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}));
 });
