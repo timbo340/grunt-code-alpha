@@ -20,17 +20,14 @@ function sizeUpdate() {
   $('#jqWidth').html(width); // Display width for testing puposes only
   $('#jqHeight').html(height); // Display height for testing puposes only
 
-  var block1 = $('.block-1');
-  var block2 = $('.block-2');
+  // var block1 = $('.block-1');
+  // var block2 = $('.block-2');
 
   // If window place content either below or above for testing puposes only
-  width <= 641 ? block1.insertAfter(block2) : block1.insertBefore(block2);
-  width <= 641 ? block3.insertAfter(block4) : block3.insertBefore(block4);
+  // width <= 641 ? block1.insertAfter(block2) : block1.insertBefore(block2);
+  // width <= 641 ? block3.insertAfter(block4) : block3.insertBefore(block4);
 
 };
 
 $(document).ready(sizeUpdate); // When the page first loads
 $(window).resize(sizeUpdate); // When the browser changes size
-
-
-// look mom!!!!!!!
